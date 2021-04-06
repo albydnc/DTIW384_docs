@@ -1,0 +1,1466 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+
+[    0.000000] Initializing cgroup subsys cpu
+
+[    0.000000] Initializing cgroup subsys cpuacct
+
+[    0.000000] Linux version 3.14.28-1.10 (root@130a8817000e) (gcc version 6.3.0 (crosstool-NG ) ) #1 SMP Fri Feb 12 14:11:56 CET 2021
+
+[    0.000000] CPU: ARMv7 Processor [420f00f3] revision 3 (ARMv7), cr=30c7387d
+
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+
+[    0.000000] Machine model: M384SFR_4L_7252S
+
+[    0.000000] moving dtb from 0x0000000000ba2068 to 0x00000000007f5cb0
+
+[    0.000000] bmem: Reserved 480 MiB at 0x0000000021000000
+
+[    0.000000] bmem: Reserved 589 MiB at 0x000000009a300000
+
+[    0.000000] cma: Reserved 16 MiB at 0x0000000020000000
+
+[    0.000000] Memory policy: Data cache writealloc
+
+[    0.000000] MCP: Write pairing already disabled
+
+[    0.000000] PERCPU: Embedded 8 pages/cpu @defbe000 s8320 r8192 d16256 u32768
+
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 523232
+
+[    0.000000] Kernel command line: root=/dev/ram0 rw ramdisk_size=88468 vmalloc=480m bmem=480m@528m bmem=589m@2467m
+
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+
+[    0.000000] Memory: 860136K/2097152K available (5776K kernel code, 248K rwdata, 1592K rodata, 248K init, 246K bss, 1220632K reserved, 16384K cma-reserved, 449536K highmem)
+
+[    0.000000] Virtual kernel memory layout:
+
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+
+[    0.000000]     vmalloc : 0xe1800000 - 0xff000000   ( 472 MB)
+
+[    0.000000]     lowmem  : 0xc0000000 - 0xe1000000   ( 528 MB)
+
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+
+[    0.000000]       .text : 0xc0008000 - 0xc073a338   (7369 kB)
+
+[    0.000000]       .init : 0xc073b000 - 0xc0779080   ( 249 kB)
+
+[    0.000000]       .data : 0xc077a000 - 0xc07b82a0   ( 249 kB)
+
+[    0.000000]        .bss : 0xc07b82a8 - 0xc07f5cb0   ( 247 kB)
+
+[    0.000000] Hierarchical RCU implementation.
+
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+
+[    0.000000] irq_brcmstb_l2: registered L2 intc (mem: 0xfc403000, parent irq: 93)
+
+[    0.000000] irq_brcmstb_l2: registered L2 intc (mem: 0xfc3e1000, parent irq: 64)
+
+[    0.000000] irq_brcmstb_l2: registered L2 intc (mem: 0xfc410640, parent irq: 95)
+
+[    0.000000] irq_brcmstb_l2: registered L2 intc (mem: 0xfc4d1200, parent irq: 58)
+
+[    0.000000] Architected cp15 timer(s) running at 27.00MHz (virt).
+
+[    0.000004] sched_clock: 56 bits at 27MHz, resolution 37ns, wraps every 2545165795328ns
+
+[    0.000009] Switching to timer-based delay loop
+
+[    0.000227] Console: colour dummy device 80x30
+
+[    0.000246] Calibrating delay loop (skipped), value calculated using timer frequency.. 54.00 BogoMIPS (lpj=27000)
+
+[    0.000256] pid_max: default: 32768 minimum: 301
+
+[    0.000344] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+
+[    0.000349] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+
+[    0.005593] Initializing cgroup subsys devices
+
+[    0.005609] Initializing cgroup subsys freezer
+
+[    0.005616] Initializing cgroup subsys blkio
+
+[    0.005640] CPU: Testing write buffer coherency: ok
+
+[    0.005843] CPU0: update cpu_power 1024
+
+[    0.005849] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+
+[    0.005898] Setting up static identity map for 0x583180 - 0x5831d8
+
+[    0.007082] CPU1: Booted secondary processor
+
+[    0.007099] CPU1: update cpu_power 1024
+
+[    0.007102] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+
+[    0.007170] Brought up 2 CPUs
+
+[    0.007180] SMP: Total of 2 processors activated.
+
+[    0.007185] CPU: All CPU(s) started in SVC mode.
+
+[    0.007521] devtmpfs: initialized
+
+[    0.010856] VFP support v0.3: implementor 42 architecture 4 part 00 variant 0 rev 0
+
+[    0.011787] regulator-dummy: no parameters
+
+[    0.011991] NET: Registered protocol family 16
+
+[    0.012776] DMA: preallocated 256 KiB pool for atomic coherent allocations
+
+[    0.013610] cpuidle: using governor ladder
+
+[    0.013616] cpuidle: using governor menu
+
+[    0.015515] irq: no irq domain found for /rdb/interrupt-controller@f040a700 !
+
+[    0.015660] irq: no irq domain found for /rdb/interrupt-controller@f0417380 !
+
+[    0.018661] syscon f0404000.syscon: regmap [mem 0xf0404000-0xf0404523] registered
+
+[    0.018784] syscon f03e2400.syscon: regmap [mem 0xf03e2400-0xf03e27ff] registered
+
+[    0.018902] syscon f0452000.syscon: regmap [mem 0xf0452000-0xf04520ff] registered
+
+[    0.019018] syscon f0404100.syscon: regmap [mem 0xf0404100-0xf040415b] registered
+
+[    0.019137] syscon f040415c.syscon: regmap [mem 0xf040415c-0xf040419b] registered
+
+[    0.019269] syscon f0410700.syscon: regmap [mem 0xf0410700-0xf041070b] registered
+
+[    0.019386] syscon f041070c.syscon: regmap [mem 0xf041070c-0xf0410713] registered
+
+[    0.019502] syscon f1101004.syscon: regmap [mem 0xf1101004-0xf1101403] registered
+
+[    0.019619] syscon f1181004.syscon: regmap [mem 0xf1181004-0xf1181403] registered
+
+[    0.019734] syscon f0404080.syscon: regmap [mem 0xf0404080-0xf0404083] registered
+
+[    0.019854] syscon f04040a4.syscon: regmap [mem 0xf04040a4-0xf04040a7] registered
+
+[    0.019968] syscon f03e0154.syscon: regmap [mem 0xf03e0154-0xf03e0157] registered
+
+[    0.020085] syscon f03e0354.syscon: regmap [mem 0xf03e0354-0xf03e0357] registered
+
+[    0.020219] syscon f03e0400.syscon: regmap [mem 0xf03e0400-0xf03e0403] registered
+
+[    0.020725] Broadcom Brahma-B15 readahead cache at: 0xfc3e2478
+
+[    0.033670] bio: create slab <bio-0> at 0
+
+[    0.034038] brcmstb-gpio f040a600.gpio: Couldn't get IRQ. Enable CONFIG_BCM7120_L2_IRQ if you want GPIO interrupt support
+
+[    0.034063] brcmstb-gpio f040a600.gpio: Registered 5 banks (GPIO(s): 0-159)
+
+[    0.034091] brcmstb-gpio f0417400.gpio: Couldn't get IRQ. Enable CONFIG_BCM7120_L2_IRQ if you want GPIO interrupt support
+
+[    0.034106] brcmstb-gpio f0417400.gpio: Registered 2 banks (GPIO(s): 160-223)
+
+[    0.085431] vreg-wifi-pwr: no parameters
+
+[    0.085596] vreg-wifi-rst: no parameters
+
+[    0.086088] SCSI subsystem initialized
+
+[    0.086743] usbcore: registered new interface driver usbfs
+
+[    0.086822] usbcore: registered new interface driver hub
+
+[    0.086919] usbcore: registered new device driver usb
+
+[    0.087099] Linux video capture interface: v2.00
+
+[    0.087208] pps_core: LinuxPPS API ver. 1 registered
+
+[    0.087212] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+
+[    0.087269] PTP clock support registered
+
+[    0.087756] Advanced Linux Sound Architecture Driver Initialized.
+
+[    0.119736] brcm-pci f0460000.pcie: link up, 5.0 Gbps x1
+
+[    0.119882] PCI host bridge to bus 0000:00
+
+[    0.119891] pci_bus 0000:00: root bus resource [mem 0xc0000000-0xc7ffffff]
+
+[    0.119897] pci_bus 0000:00: root bus resource [mem 0xc8000000-0xcfffffff]
+
+[    0.119902] pci_bus 0000:00: root bus resource [io  0x1000-0xffff]
+
+[    0.119908] pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+
+[    0.119939] brcm-pci f0460000.pcie: found device 14e4:7439 on bus 0 (PCIe0), slot 0 (irq 75)
+
+[    0.120185] PCI: bus0: Fast back to back transfers disabled
+
+[    0.120191] pci 0000:00:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+
+[    0.120338] brcm-pci f0460000.pcie: found device 14e4:aa52 on bus 1 (PCIe0), slot 0 (irq 75)
+
+[    0.122590] PCI: bus1: Fast back to back transfers disabled
+
+[    0.122640] pci 0000:00:00.0: BAR 8: assigned [mem 0xc0000000-0xc05fffff]
+
+[    0.122648] pci 0000:01:00.0: BAR 2: assigned [mem 0xc0000000-0xc03fffff 64bit]
+
+[    0.122669] pci 0000:01:00.0: BAR 0: assigned [mem 0xc0400000-0xc0407fff 64bit]
+
+[    0.122688] pci 0000:00:00.0: PCI bridge to [bus 01]
+
+[    0.122694] pci 0000:00:00.0:   bridge window [mem 0xc0000000-0xc05fffff]
+
+[    0.122736] Switched to clocksource arch_sys_counter
+
+[    0.131819] thermal thermal_zone0: failed to read out thermal zone 0
+
+[    0.131908] NET: Registered protocol family 2
+
+[    0.132273] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+
+[    0.132295] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+
+[    0.132333] TCP: Hash tables configured (established 4096 bind 4096)
+
+[    0.132413] TCP: reno registered
+
+[    0.132420] UDP hash table entries: 256 (order: 1, 8192 bytes)
+
+[    0.132431] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+
+[    0.132555] NET: Registered protocol family 1
+
+[    0.132780] RPC: Registered named UNIX socket transport module.
+
+[    0.132785] RPC: Registered udp transport module.
+
+[    0.132788] RPC: Registered tcp transport module.
+
+[    0.132791] RPC: Registered tcp NFSv4.1 backchannel transport module.
+
+[    0.132927] Trying to unpack rootfs image as initramfs...
+
+[    0.133035] rootfs image is not initramfs (junk in compressed archive); looks like an initrd
+
+[    0.363889] Freeing initrd memory: 88468K (c1000000 - c6665000)
+
+[    0.365139] futex hash table entries: 512 (order: 3, 32768 bytes)
+
+[    0.365175] Initialise system trusted keyring
+
+[    0.365501] bounce pool size: 64 pages
+
+[    0.365854] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+
+[    0.366037] NFS: Registering the id_resolver key type
+
+[    0.366058] Key type id_resolver registered
+
+[    0.366062] Key type id_legacy registered
+
+[    0.366072] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+
+[    0.366122] JFS: nTxBlock = 7538, nTxLock = 60311
+
+[    0.369967] msgmni has been set to 1006
+
+[    0.370591] Key type asymmetric registered
+
+[    0.370598] Asymmetric key parser 'x509' registered
+
+[    0.370777] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+
+[    0.370841] io scheduler noop registered
+
+[    0.370845] io scheduler deadline registered
+
+[    0.370871] io scheduler cfq registered (default)
+
+[    0.371105] brcm-gisb-arb f0400000.gisb-arb: registered mem: fc400000, irqs: 258, 259
+
+[    0.371608] PCI: enabling device 0000:00:00.0 (0140 -> 0143)
+
+[    0.371907] pcieport 0000:00:00.0: Signaling PME through PCIe PME interrupt
+
+[    0.371915] pci 0000:01:00.0: Signaling PME through PCIe PME interrupt
+
+[    0.372198] brcmstb_memc f1102000.memc-ddr: registered
+
+[    0.372222] brcmstb_memc f1182000.memc-ddr: registered
+
+[    0.372433] brcm-waketimer f0417580.waketimer: registered, with irq 260
+
+[    0.425326] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+
+[    0.427240] f040a900.serial: ttyS0 at MMIO 0xf040a900 (irq = 107, base_baud = 5062500) is a 16550A
+
+[    1.381322] console [ttyS0] enabled
+
+[    1.385487] f040a940.serial: ttyS1 at MMIO 0xf040a940 (irq = 108, base_baud = 5062500) is a 16550A
+
+[    1.395005] f040a980.serial: ttyS2 at MMIO 0xf040a980 (irq = 109, base_baud = 5062500) is a 16550A
+
+[    1.405006] brd: module loaded
+
+[    1.410660] loop: module loaded
+
+[    1.415311] spi_brcmstb f03e3400.spi: 1-lane output, 3-byte address
+
+[    1.421710] spi_brcmstb f03e3400.spi: master is unqueued, this is deprecated
+
+[    1.429046] sfdp: signature = 0x50444653
+
+[    1.432986] sfdp: minor revision = 0
+
+[    1.436571] sfdp: major revision = 1
+
+[    1.440165] sfdp: num parameters = 1
+
+[    1.443969] sfdp: ====================
+
+[    1.447733] sfdp: parameter 0
+
+[    1.450709] sfdp: jedec id = 0x00
+
+[    1.454031] sfdp: minor revision = 0
+
+[    1.457615] sfdp: major revision = 1
+
+[    1.461198] sfdp: parameter length = 9
+
+[    1.464955] sfdp: parameter table pointer = 48
+
+[    1.469409] sfdp: sector erase size = 1 (4 KB)
+
+[    1.473862] sfdp: write granulatrity = 1 (64B or more)
+
+[    1.479011] sfdp: write enable instruction = 0 (sr non volatile)
+
+[    1.485028] sfdp: write enable opcode = 0 (0x50)
+
+[    1.489655] sfdp: 4 KB erase opcode = 0x20
+
+[    1.493760] sfdp: fast read 1-1-2 = 1 (supported)
+
+[    1.498473] sfdp: address bytes = 0 (3-Byte only)
+
+[    1.503187] sfdp: double transfert rate = 0 (NOT supported)
+
+[    1.508770] sfdp: fast read 1-2-2 = 1 (supported)
+
+[    1.513483] sfdp: fast read 1-4-4 = 1 (supported)
+
+[    1.518196] sfdp: fast read 1-1-4 = 1 (supported)
+
+[    1.522909] sfdp: flash memory density = 33554431 (4194304 bytes)
+
+[    1.529013] sfdp: fast read 1-4-4 number of wait states = 0x4
+
+[    1.534770] sfdp: fast read 1-4-4 number of mode bits = 0x2
+
+[    1.540353] sfdp: fast read 1-4-4 opcode = 0xeb
+
+[    1.544893] sfdp: fast read 1-1-4 number of wait states = 0x8
+
+[    1.550650] sfdp: fast read 1-1-4 number of mode bits = 0x0
+
+[    1.556233] sfdp: fast read 1-1-4 opcode = 0x6b
+
+[    1.560772] sfdp: fast read 1-1-2 number of wait states = 0x8
+
+[    1.566527] sfdp: fast read 1-1-2 number of mode bits = 0x0
+
+[    1.572109] sfdp: fast read 1-1-2 opcode = 0x3b
+
+[    1.576648] sfdp: fast read 1-2-2 number of wait states = 0x4
+
+[    1.582405] sfdp: fast read 1-2-2 number of mode bits = 0x0
+
+[    1.587987] sfdp: fast read 1-2-2 opcode = 0xbb
+
+[    1.592527] sfdp: fast read 2-2-2 = 0 (NOT supported)
+
+[    1.597588] sfdp: fast read 4-4-4 = 0 (NOT supported)
+
+[    1.602649] sfdp: fast read 2-2-2 number of wait states = 0x0
+
+[    1.608405] sfdp: fast read 2-2-2 number of mode bits = 0x0
+
+[    1.613987] sfdp: fast read 2-2-2 opcode = 0xff
+
+[    1.618527] sfdp: fast read 4-4-4 number of wait states = 0x0
+
+[    1.624283] sfdp: fast read 4-4-4 number of mode bits = 0x0
+
+[    1.629868] sfdp: fast read 4-4-4 opcode = 0xff
+
+[    1.634407] sfdp: sector type 1 size = 12 (4096)
+
+[    1.639033] sfdp: sector type 1 opcode = 0x20
+
+[    1.643399] sfdp: sector type 2 size = 15 (32768)
+
+[    1.648112] sfdp: sector type 2 opcode = 0x52
+
+[    1.652478] sfdp: sector type 3 size = 16 (65536)
+
+[    1.657191] sfdp: sector type 3 opcode = 0xd8
+
+[    1.661556] sfdp: sector type 4 size = 0 (1)
+
+[    1.665834] sfdp: sector type 4 opcode = 0xff
+
+[    1.670199] sfdp: data[00]: 0xfff120e5
+
+[    1.673957] sfdp: data[01]: 0x01ffffff
+
+[    1.677714] sfdp: data[02]: 0x6b08eb44
+
+[    1.681471] sfdp: data[03]: 0xbb043b08
+
+[    1.685228] sfdp: data[04]: 0xffffffee
+
+[    1.688985] sfdp: data[05]: 0xff00ffff
+
+[    1.692742] sfdp: data[06]: 0xff00ffff
+
+[    1.696499] sfdp: data[07]: 0x520f200c
+
+[    1.700256] sfdp: data[08]: 0xff00d810
+
+[    1.704017] sfdp: ====================
+
+[    1.707777] sfdp: parameter 1
+
+[    1.710753] sfdp: jedec id = 0xc2
+
+[    1.714075] sfdp: minor revision = 0
+
+[    1.717661] sfdp: major revision = 1
+
+[    1.721245] sfdp: parameter length = 4
+
+[    1.725002] sfdp: parameter table pointer = 96
+
+[    1.729520] m25p80 spi32766.0: m25p80 (4096 Kbytes)
+
+[    1.734431] 4 ofpart partitions found on MTD device spi32766.0
+
+[    1.740302] Creating 4 MTD partitions on "spi32766.0":
+
+[    1.745455] 0x000000000000-0x000000400000 : "flash0"
+
+[    1.751156] 0x00000015d000-0x00000015f800 : "flash0.nomenclature"
+
+[    1.757268] mtd: partition "flash0.nomenclature" doesn't end on an erase block -- force read-only
+
+[    1.766786] 0x00000015f800-0x000000160000 : "flash0.factorydata"
+
+[    1.772806] mtd: partition "flash0.factorydata" doesn't start on an erase block boundary -- force read-only
+
+[    1.783182] 0x000000110000-0x000000120000 : "pdb"
+
+[    1.789590] libphy: Fixed MDIO Bus: probed
+
+[    1.794198] bcmgenet f0b00000.ethernet: GENET 4.5 EPHY: 0x1001
+
+[    1.810744] libphy: bcmgenet MII bus: probed
+
+[    1.835997] e1000e: Intel(R) PRO/1000 Network Driver - 2.3.2-k
+
+[    1.841845] e1000e: Copyright(c) 1999 - 2013 Intel Corporation.
+
+[    1.847868] pegasus: v0.9.3 (2013/04/25), Pegasus/Pegasus II USB Ethernet driver
+
+[    1.855372] usbcore: registered new interface driver pegasus
+
+[    1.861120] usbcore: registered new interface driver asix
+
+[    1.866596] usbcore: registered new interface driver ax88179_178a
+
+[    1.872776] usbcore: registered new interface driver cdc_ether
+
+[    1.878707] usbcore: registered new interface driver cdc_ncm
+
+[    1.899721] xhci-brcm: xHCI BRCM driver
+
+[    1.903698] xhci-brcm f0471000.xhci: xHCI Host Controller
+
+[    1.909242] xhci-brcm f0471000.xhci: new USB bus registered, assigned bus number 1
+
+[    1.917127] xhci-brcm f0471000.xhci: irq 149, io mem 0xf0471000
+
+[    1.923592] hub 1-0:1.0: USB hub found
+
+[    1.927377] hub 1-0:1.0: config failed, hub doesn't have any ports! (err -19)
+
+[    1.934647] xhci-brcm f0471000.xhci: xHCI Host Controller
+
+[    1.940186] xhci-brcm f0471000.xhci: new USB bus registered, assigned bus number 2
+
+[    1.948251] hub 2-0:1.0: USB hub found
+
+[    1.952031] hub 2-0:1.0: 2 ports detected
+
+[    1.956324] ehci-brcm: EHCI BRCM driver
+
+[    1.960330] ehci-brcm f0470300.ehci: EHCI Host Controller
+
+[    1.965878] ehci-brcm f0470300.ehci: new USB bus registered, assigned bus number 3
+
+[    1.983557] ehci-brcm f0470300.ehci: irq 145, io mem 0xf0470300
+
+[    1.994743] ehci-brcm f0470300.ehci: USB 2.0 started, EHCI 1.00
+
+[    2.001126] hub 3-0:1.0: USB hub found
+
+[    2.004903] hub 3-0:1.0: 1 port detected
+
+[    2.009031] ehci-brcm f0470500.ehci: EHCI Host Controller
+
+[    2.014583] ehci-brcm f0470500.ehci: new USB bus registered, assigned bus number 4
+
+[    2.032252] ehci-brcm f0470500.ehci: irq 146, io mem 0xf0470500
+
+[    2.043741] ehci-brcm f0470500.ehci: USB 2.0 started, EHCI 1.00
+
+[    2.050101] hub 4-0:1.0: USB hub found
+
+[    2.053877] hub 4-0:1.0: 1 port detected
+
+[    2.058132] ohci-brcm: OHCI BRCM driver
+
+[    2.062112] ohci-brcm f0470400.ohci: BRCM OHCI controller
+
+[    2.067652] ohci-brcm f0470400.ohci: new USB bus registered, assigned bus number 5
+
+[    2.075256] ohci-brcm f0470400.ohci: irq 147, io mem 0xf0470400
+
+[    2.136182] hub 5-0:1.0: USB hub found
+
+[    2.139960] hub 5-0:1.0: 1 port detected
+
+[    2.144083] ohci-brcm f0470600.ohci: BRCM OHCI controller
+
+[    2.149625] ohci-brcm f0470600.ohci: new USB bus registered, assigned bus number 6
+
+[    2.157230] ohci-brcm f0470600.ohci: irq 148, io mem 0xf0470600
+
+[    2.218193] hub 6-0:1.0: USB hub found
+
+[    2.221972] hub 6-0:1.0: 1 port detected
+
+[    2.226121] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+
+[    2.232664] ehci-pci: EHCI PCI platform driver
+
+[    2.237208] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+
+[    2.243404] ohci-pci: OHCI PCI platform driver
+
+[    2.248144] usbcore: registered new interface driver usb-storage
+
+[    2.254825] i2c /dev entries driver
+
+[    2.258525] gspca_main: v2.14.0 registered
+
+[    2.263008] brcmstb_thermal f04d1500.thermal: registered AVS TMON of-sensor driver
+
+[    2.270951] device-mapper: ioctl: 4.27.0-ioctl (2013-10-30) initialised: dm-devel@redhat.com
+
+[    2.279479] cpufreq_cpu0: failed to get cpu0 regulator: -19
+
+[    2.285315] sdhci: Secure Digital Host Controller Interface driver
+
+[    2.291513] sdhci: Copyright(c) Pierre Ossman
+
+[    2.295882] sdhci-pltfm: SDHCI platform and OF driver helper
+
+[    2.302662] mmc0: no vqmmc regulator found
+
+[    2.306770] mmc0: no vmmc regulator found
+
+[    2.340745] mmc0: SDHCI controller on f03e0000.sdhci [f03e0000.sdhci] using ADMA
+
+[    2.350509] mmc1: no vqmmc regulator found
+
+[    2.354621] mmc1: no vmmc regulator found
+
+[    2.392737] mmc1: SDHCI controller on f03e0200.sdhci [f03e0200.sdhci] using ADMA
+
+[    2.401011] nf_conntrack version 0.5.0 (15077 buckets, 60308 max)
+
+[    2.407461] ip_tables: (C) 2000-2006 Netfilter Core Team
+
+[    2.412858] TCP: cubic registered
+
+[    2.416228] NET: Registered protocol family 10
+
+[    2.421169] ip6_tables: (C) 2000-2006 Netfilter Core Team
+
+[    2.426694] NET: Registered protocol family 17
+
+[    2.431225] Bridge firewalling registered
+
+[    2.434385] mmc0: BKOPS_EN bit is not set
+
+[    2.439557] 8021q: 802.1Q VLAN Support v1.8
+
+[    2.440734] mmc0: new high speed MMC card at address 0001
+
+[    2.449195] Key type dns_resolver registered
+
+[    2.449786] mmcblk0: mmc0:0001 4FPD3R 2.95 GiB 
+
+[    2.449904] mmcblk0boot0: mmc0:0001 4FPD3R partition 1 4.00 MiB
+
+[    2.450016] mmcblk0boot1: mmc0:0001 4FPD3R partition 2 4.00 MiB
+
+[    2.450124] mmcblk0gp0: mmc0:0001 4FPD3R partition 4 16.0 MiB
+
+[    2.450227] mmcblk0gp1: mmc0:0001 4FPD3R partition 5 16.0 MiB
+
+[    2.450332] mmcblk0gp2: mmc0:0001 4FPD3R partition 6 256 MiB
+
+[    2.450441] mmcblk0rpmb: mmc0:0001 4FPD3R partition 3 512 KiB
+
+[    2.492845] Registering SWP/SWPB emulation handler
+
+[    2.497171]  mmcblk0: p1 p2
+
+[    2.499141]  mmcblk0gp2: unknown partition table
+
+[    2.499904]  mmcblk0gp1: unknown partition table
+
+[    2.500642]  mmcblk0gp0: unknown partition table
+
+[    2.502318]  mmcblk0boot1: unknown partition table
+
+[    2.502927]  mmcblk0boot0: unknown partition table
+
+[    2.524285] Loading compiled-in X.509 certificates
+
+[    2.531642] Loaded X.509 cert 'SFR: Zapper 4K signing key: e7534b816b1880c4aae74b638ffe76f6e7443fcc'
+
+[    2.540894] regulator-dummy: disabling
+
+[    2.545117] ALSA device list:
+
+[    2.548103]   No soundcards found.
+
+[    2.551984] RAMDISK: squashfs filesystem found at block 0
+
+[    2.557421] RAMDISK: Loading 88466KiB [1 disk] into ram disk... |/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|
+
+[    2.779904] usb 5-1: new full-speed USB device number 2 using ohci-brcm
+
+[    2.786911] /-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/done.
+
+[    4.373109] VFS: Mounted root (squashfs filesystem) readonly on device 1:0.
+
+[    4.381074] devtmpfs: mounted
+
+[    4.384328] Freeing unused kernel memory: 248K (c073b000 - c0779000)
+
+
+
+	Next Generation Init version ( 0.6.10.3 Die bugs die! )
+
+	http://www.initng.org
+
+	Author: Jimmy Wennlund <jimmy.wennlund@gmail.com>
+
+	If you find initng useful, please consider a small donation.
+
+
+
+	System is starting up!
+
+
+
+      runlevel/default	[starting]
+
+      daemon/dropbear	[starting]
+
+      system/mountfs/params	[starting]
+
+      system/initial/mountvirtfs	[starting]
+
+      system/udev/pre-fill	[starting]
+
+      daemon/gui/ready	[starting]
+
+      daemon/gui	[starting]
+
+      daemon/gui/pre-start	[starting]
+
+      system/mountfs	[starting]
+
+      system/splash	[starting]
+
+      system/splash/pre-start	[starting]
+
+      modules/engine	[starting]
+
+      modules/engine/start	[starting]
+
+      modules/engine/pre-start	[starting]
+
+      system/udev/populate	[starting]
+
+      system/udev/udevd	[starting]
+
+      system/lxc-mount	[starting]
+
+      daemon/dbus	[starting]
+
+      daemon/dbus/start	[starting]
+
+      system/initial/lo	[starting]
+
+      system/initial/eth0	[starting]
+
+      system/switchrunlevel	[starting]
+
+      system/syslogd	[starting]
+
+      system/lxc-dbus	[starting]
+
+      system/dfb	[starting]
+
+      daemon/lircd	[starting]
+
+      daemon/lircd/start	[starting]
+
+      daemon/bsa	[starting]
+
+      modules/bt	[starting]
+
+      system/lxc-base	[starting]
+
+      daemon/lircd/ble	[starting]
+
+      daemon/lircd/hh	[starting]
+
+      system/lxc-uibrowser	[starting]
+
+      system/initial/lxcbr0	[starting]
+
+      system/initial/bond0	[starting]
+
+      system/initial/wlan0	[starting]
+
+      modules/wlan	[starting]
+
+      daemon/hal	[starting]
+
+      daemon/hal/start	[starting]
+
+      daemon/crs	[starting]
+
+      daemon/settingsd	[starting]
+
+      daemon/settingsd/isalive	[starting]
+
+      daemon/cpc	[starting]
+
+      daemon/avio	[starting]
+
+      daemon/network/start	[starting]
+
+      daemon/radvd	[starting]
+
+      system/lxc-network	[starting]
+
+      system/lxc-mediacenter	[starting]
+
+      daemon/odhcp6c	[starting]
+
+      daemon/network/mc_net	[starting]
+
+      daemon/network/wait	[starting]
+
+      daemon/network/host_net	[starting]
+
+      daemon/player	[starting]
+
+      modules/fuse	[starting]
+
+      daemon/media2d	[starting]
+
+      daemon/storage	[starting]
+
+      system/setup	[starting]
+
+      system/downloader	[starting]
+
+      system/lxc-downloader	[starting]
+
+      system/lxc-remote	[starting]
+
+      daemon/tvplayer	[starting]
+
+      daemon/tvplayer/isalive	[starting]
+
+      daemon/opal	[starting]
+
+      daemon/opal/event	[starting]
+
+      modules/feip	[starting]
+
+      daemon/opal/daemon	[starting]
+
+      daemon/opal/power	[starting]
+
+      daemon/dsm	[starting]
+
+      daemon/adstorage	[starting]
+
+      daemon/wsproxy	[starting]
+
+      daemon/network	[starting]
+
+      daemon/cas	[starting]
+
+      system/lxc-cas	[starting]
+
+      modules/fusion	[starting]
+
+      system/coredumpme	[starting]
+
+      system/inetd	[starting]
+
+      system/sysctl	[starting]
+
+   1% modules/fusion	[done]  	( done in 191ms )
+
+   2% system/initial/mountvirtfs	[done]  	( done in 1826ms )
+
+   3% system/sysctl	[done]  	( done in 22ms )
+
+   5% system/udev/pre-fill	[done]  	( done in 117ms )
+
+   6% modules/feip	[done]  	( done in 269ms )
+
+   7% system/splash/pre-start	[done]  	( done in 907ms )
+
+Detect DWNL Version : 1.8.20
+
+   8% modules/engine/pre-start	[done]  	( done in 1202ms )
+
+  10% modules/engine/start	[started]	( pid: 1936 )
+
+  11% system/mountfs/params	[done]  	( done in 3249ms )
+
+  13% system/initial/lo	[done]  	( done in 41ms )
+
+  14% system/initial/eth0	[done]  	( done in 122ms )
+
+  16% system/lxc-dbus	[done]  	( done in 198ms )
+
+      system/syslogd/disk	[starting]
+
+  17% system/syslogd/disk	[started]	( pid: 2471 )
+
+      system/klogd	[starting]
+
+  18% system/klogd	[started]	( pid: 2473 )
+
+  19% system/syslogd	[done]  	( done in 2339ms )
+
+      runlevel/fullapp	[starting]
+
+      daemon/airshare	[starting]
+
+      daemon/avahi	[starting]
+
+      daemon/audience	[starting]
+
+      daemon/collector	[starting]
+
+      daemon/mysniffer	[starting]
+
+      daemon/netflix	[starting]
+
+      daemon/dial	[starting]
+
+      daemon/qos	[starting]
+
+      daemon/srsd	[starting]
+
+      daemon/supervisor	[starting]
+
+      system/mmc/health	[starting]
+
+      daemon/wsserver	[starting]
+
+      daemon/upnp	[starting]
+
+      daemon/upnp/start-dms	[starting]
+
+      daemon/vocalassist	[starting]
+
+      system/lxc-voice	[starting]
+
+      system/lxc-voice/pre-start	[starting]
+
+      system/diag	[starting]
+
+      system/ntpd	[starting]
+
+      system/ntpd/start	[starting]
+
+      system/lxc-date	[starting]
+
+      system/epg	[starting]
+
+      system/epg/boot	[starting]
+
+      system/epg/pre-start	[starting]
+
+      runlevel/default	[stopped]	( stopped in 7883ms )
+
+  15% system/switchrunlevel	[done]  	( done in 23ms )
+
+  16% system/lxc-base	[done]  	( done in 173ms )
+
+  17% modules/engine	[done]  	( done in 5015ms )
+
+  18% modules/bt	[done]  	( done in 108ms )
+
+  19% system/splash	[done]  	( done in 1281ms )
+
+ 01:00:14 -- WARN:	daemon daemon/dbus/start has been killed!, executing DAEMON_CLEAN!
+
+  21% daemon/dbus/start	[started]	( pid: 4 )
+
+  22% daemon/dbus	[done]  	( done in 19ms )
+
+  25% daemon/settingsd/isalive	[started]	( pid: 2605 )
+
+  25% daemon/avio	[started]	( pid: 2606 )
+
+  25% daemon/tvplayer/isalive	[started]	( pid: 2607 )
+
+  26% system/lxc-mount	[done]  	( done in 228ms )
+
+  27% system/udev/udevd	[started]	( pid: 2647 )
+
+  28% system/udev/populate	[done]  	( done in 489ms )
+
+  29% daemon/hal/start	[started]	( pid: 3571 )
+
+  30% system/mountfs	[done]  	( done in 31ms )
+
+  31% daemon/srsd	[started]	( pid: 3584 )
+
+  32% modules/fuse	[done]  	( done in 50ms )
+
+  33% system/coredumpme	[done]  	( done in 66ms )
+
+  34% system/lxc-voice/pre-start	[done]  	( done in 107ms )
+
+  35% daemon/gui/pre-start	[done]  	( done in 76ms )
+
+  36% modules/wlan	[done]  	( done in 1311ms )
+
+  37% daemon/cpc	[started]	( pid: 3636 )
+
+  38% system/initial/wlan0	[done]  	( done in 350ms )
+
+  39% system/initial/bond0	[done]  	( done in 297ms )
+
+  40% system/initial/lxcbr0	[done]  	( done in 309ms )
+
+      daemon/prime/pre-start	[starting]
+
+  41% daemon/hal	[done]  	( done in 2105ms )
+
+  42% daemon/storage	[started]	( pid: 3927 )
+
+  43% daemon/adstorage	[started]	( pid: 3929 )
+
+  44% system/lxc-cas	[done]  	( done in 855ms )
+
+  44% system/lxc-date	[done]  	( done in 851ms )
+
+  45% system/lxc-downloader	[done]  	( done in 906ms )
+
+  46% system/lxc-voice	[done]  	( done in 1050ms )
+
+  48% daemon/bsa	[started]	( pid: 2538 )
+
+  48% system/lxc-remote	[done]  	( done in 1247ms )
+
+  50% daemon/lircd/start	[started]	( pid: 3990 )
+
+  50% system/inetd	[started]	( pid: 3991 )
+
+  52% daemon/lircd/ble	[started]	( pid: 3992 )
+
+  53% daemon/lircd/hh	[started]	( pid: 3993 )
+
+  54% system/lxc-uibrowser	[done]  	( done in 1268ms )
+
+  55% daemon/lircd	[done]  	( done in 1038ms )
+
+  55% system/dfb	[started]	( pid: 4045 )
+
+  56% daemon/prime/pre-start	[done]  	( done in 9345ms )
+
+  57% system/lxc-mediacenter	[done]  	( done in 11918ms )
+
+  59% daemon/player	[started]	( pid: 4218 )
+
+  59% daemon/dsm	[started]	( pid: 4220 )
+
+  60% daemon/opal/event	[done]  	( done in 140ms )
+
+  61% system/lxc-network	[done]  	( done in 370ms )
+
+  63% daemon/radvd	[started]	( pid: 4261 )
+
+  63% daemon/odhcp6c	[started]	( pid: 4262 )
+
+  65% daemon/network/start	[started]	( pid: 4263 )
+
+  65% daemon/opal/daemon	[done]  	( done in 1155ms )
+
+  66% daemon/opal/power	[done]  	( done in 117ms )
+
+  67% daemon/opal	[done]  	( done in 6ms )
+
+  68% daemon/tvplayer	[started]	( pid: 4337 )
+
+  69% daemon/network/wait	[done]  	( done in 2010ms )
+
+  70% daemon/network/host_net	[started]	( pid: 4368 )
+
+  70% daemon/network/mc_net	[started]	( pid: 4369 )
+
+ 01:00:32 -- WARN:	daemon daemon/settingsd has been killed!, executing DAEMON_CLEAN!
+
+      daemon/settingsd	[stopped]	( stopped in 396ms )
+
+      daemon/settingsd	[starting]
+
+  72% daemon/settingsd	[started]	( pid: 4406 )
+
+  72% daemon/network	[done]  	( done in 41061ms )
+
+  76% daemon/crs	[started]	( pid: 4780 )
+
+  76% daemon/wsproxy	[started]	( pid: 4782 )
+
+  76% daemon/vocalassist	[started]	( pid: 4783 )
+
+  76% system/ntpd/start	[started]	( pid: 4784 )
+
+  77% system/ntpd	[done]  	( done in 10102ms )
+
+      system/ntpd	[stopping]
+
+  80% daemon/cas	[started]	( pid: 4954 )
+
+  80% daemon/qos	[started]	( pid: 4955 )
+
+  80% daemon/upnp	[started]	( pid: 4956 )
+
+      system/ntpd	[stopped]
+
+  80% system/downloader	[done]  	( done in 17414ms )
+
+  81% system/epg/pre-start	[done]  	( done in 84ms )
+
+  81% system/ntpd	[done]  	( done in 10073ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  81% system/setup	[done]  	( done in 5201ms )
+
+  82% daemon/media2d	[started]	( pid: 5227 )
+
+  83% daemon/gui	[started]	( pid: 5228 )
+
+Version 1.20.11 (Fri Feb 12 13:58:21 UTC 2021)
+
+STB system ip addr : 
+
+  84% daemon/gui/ready	[done]  	( done in 40ms )
+
+  90% daemon/dropbear	[started]	( pid: 5253 )
+
+  90% daemon/avahi	[started]	( pid: 5254 )
+
+  90% daemon/audience	[started]	( pid: 5255 )
+
+  90% daemon/collector	[started]	( pid: 5256 )
+
+  90% daemon/mysniffer	[started]	( pid: 5257 )
+
+  90% daemon/dial	[started]	( pid: 5258 )
+
+  90% daemon/wsserver	[started]	( pid: 5261 )
+
+  92% daemon/airshare	[started]	( pid: 5273 )
+
+  92% daemon/netflix	[started]	( pid: 5274 )
+
+Factory mode start the browser on http://www.sagemcom-factory.com/SFR-DTIW3844/index.html
+
+  93% daemon/upnp/start-dms	[done]  	( done in 126ms )
+
+  94% system/mmc/health	[done]  	( done in 1520ms )
+
+  95% daemon/supervisor	[started]	( pid: 5403 )
+
+ 01:01:47 -- WARN:	daemon daemon/airshare has been killed!, executing DAEMON_CLEAN!
+
+      daemon/airshare	[starting]
+
+      daemon/airshare	[starting]
+
+  95% system/epg/boot	[done]  	( done in 2392ms )
+
+  96% daemon/airshare	[started]	( pid: 5452 )
+
+ 01:01:48 -- WARN:	daemon daemon/airshare has been killed!, executing DAEMON_CLEAN!
+
+ 01:01:48 -- WARN:	Won't respawn service daemon/airshare, it was respawned 1 seconds ago.
+
+  97% system/epg	[done]  	( done in 938ms )
+
+  98% system/ntpd	[done]  	( done in 10145ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10080ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10074ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10074ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10074ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10078ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10076ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10077ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10074ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10076ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10082ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10077ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10074ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10074ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10074ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10074ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10073ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10078ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10074ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10073ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10073ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10080ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10081ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10082ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10080ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10073ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10074ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10074ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10073ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10073ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10073ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10078ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10076ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10074ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10073ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10073ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10075ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10074ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
+  98% system/ntpd	[done]  	( done in 10085ms )
+
+      system/ntpd	[stopping]
+
+      system/ntpd	[stopped]
+
